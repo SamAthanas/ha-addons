@@ -1,0 +1,34 @@
+name: "Note Mark"
+description: A simple note marking service
+version: "0.13.0"
+slug: "note_mark"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ports:
+  8000/tcp: 8000
+webui: http://[HOST]:[PORT:8000]/
+ingress: false
+map:
+  - config:rw
+options:
+  JWT_SECRET: bXktc2VjcmV0
+  CORS_ORIGINS: http://example.com:8000
+  TOKEN_EXPIRY: 259200
+  DATA_PATH: /data
+  NOTE_SIZE_LIMIT: 1M
+  ASSET_SIZE_LIMIT: 12M
+  ALLOW_SIGNUP: true
+schema:
+  JWT_SECRET: str
+  CORS_ORIGINS: str
+  TOKEN_EXPIRY: int
+  DATA_PATH: str
+  NOTE_SIZE_LIMIT: str
+  ASSET_SIZE_LIMIT: str
+  ALLOW_SIGNUP: bool
+legacy: true
