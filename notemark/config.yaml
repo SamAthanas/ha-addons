@@ -1,8 +1,9 @@
 name: "Note Mark"
 description: A simple note marking service
-version: "0.13.1"
+version: "0.13.2"
 slug: "note_mark"
 init: false
+url: "https://github.com/SamAthanas/ha-addons"
 arch:
   - aarch64
   - amd64
