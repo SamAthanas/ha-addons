@@ -1,6 +1,6 @@
 name: "Note Mark"
 description: A simple note marking service
-version: "0.13.0"
+version: "0.13.1"
 slug: "note_mark"
 init: false
 arch:
